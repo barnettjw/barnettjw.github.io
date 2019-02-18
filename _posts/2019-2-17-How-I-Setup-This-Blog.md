@@ -70,19 +70,27 @@ Now that you've got your github pages site up and running you may want to setup 
 3. `jekyll serve --watch`
 4. View [http://127.0.0.1:4000](http://127.0.0.1:4000) in your browser
 
-### Edit files locally
-1. Open Atom
-2. Open folder to the location of your repository
-3. Edit files
-4. Check out the changes locally
-5. Authorize GitHub for Atom
-6. Commit and push your changes
-7. View `https://<your github username>.github.io/` in your browser to see your changes
+### Commit Files to local Git repository
+1. Open Atom --> `Open folder`
+    * select the location local of your repository
+2. Edit files
+3. Check out the changes locally
+4. Authorize GitHub for Atom
+5. `Packages` Menu --> `GitHub Package` --> `Toggle Git`
+7. For each file
+    1. Click `Stage file`
+    2. Enter commit message for the edits you made in *step 3*
+    3. Click `Commit to master`
+
+### Update live site using Git
+1. Open folder of your repository in Atom
+2. `Packages` --> `Command Pallet` --> `Git Push`
+3. Wait for Atom to finish pushing your changes
+4. View `https://<your github username>.github.io/` in your browser to see your changes
 
 ## Additional Resources
 * [Build a GitHub-Hosted Blog with Jekyll Now](https://www.hongkiat.com/blog/jekyll-now)
 * [How to Create a Blog with Jekyll – A Beginner’s Guide](https://www.hongkiat.com/blog/blog-with-jekyll/)
+* [Orginial Article](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/) by Creator of Jekyll Now
 * [How to Manage Git and GitHub Projects with Atom](https://www.hongkiat.com/blog/manage-git-github-atom/)
 * [Jekyll Offical Documentation - Posts](https://jekyllrb.com/docs/posts/)
-
-    ##### [Orginial Article](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/) by Creator of Jekyll Now
