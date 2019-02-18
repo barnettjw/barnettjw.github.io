@@ -5,7 +5,7 @@ date: 2018-02-17
 last_updated: 2018-02-18
 ---
 
-Setting up a blog hosted on [GitHub pages](https://pages.github.com/) (like this one) can be done with only a GitHub account. Posts can be written in markdown using [github.com](https://github.com). To create the page you are reading now I started by creating a basic Github pages site. One of the easiest ways to do that is to `fork` the `barryclark/jekyll-now` repository (repo for short) on Github. Once I forked that repo, I renamed  the repo from `jekyll-now` to `barnettjw.github.io` (the url you used to get here).
+Setting up a blog hosted on [GitHub pages](https://pages.github.com/) (like this one) can be done with only a GitHub account. Posts can be written in markdown using [github.com](https://github.com). To create the page you are reading now I started by creating a basic Github Pages site. One of the easiest ways to do that is to **fork** the [barryclark/jekyll-now](https://github.com/barryclark/jekyll-now) repository (repo for short) on Github. Once I forked that repo, I renamed  the repo from `jekyll-now` to `barnettjw.github.io` (the url you used to get here).
 
 This post is a detailed list of the steps I used to make this blog, it is divided into 2 parts, **Basic Github Pages Setup** and **Setting up a Jekyll Local Development Environment**. All you need is a Github account, if you don't already have a Github account you can create at [github.com](https://github.com/). On Github pages all content is written using Markdown. If you are new to Markdown or just need a refresher, you can check out [this guide on mastering Markdown](https://guides.github.com/features/mastering-markdown/).
 
