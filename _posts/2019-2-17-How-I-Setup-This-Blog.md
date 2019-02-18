@@ -92,5 +92,8 @@ Now that you've got your github pages site up and running you may want to setup 
 * [Build a GitHub-Hosted Blog with Jekyll Now](https://www.hongkiat.com/blog/jekyll-now)
 * [How to Create a Blog with Jekyll – A Beginner’s Guide](https://www.hongkiat.com/blog/blog-with-jekyll/)
 * [Orginial Article](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/) by Creator of Jekyll Now
+* [Install Jekyll on Windows](https://learn.cloudcannon.com/jekyll/install-jekyll-on-windows/)
+* [Install Jekyll on Mac OS X](https://learn.cloudcannon.com/jekyll/install-jekyll-on-os-x/)
 * [How to Manage Git and GitHub Projects with Atom](https://www.hongkiat.com/blog/manage-git-github-atom/)
+* [Jekyll File Structure](https://learn.cloudcannon.com/jekyll/jekyll-file-structure/)
 * [Jekyll Offical Documentation - Posts](https://jekyllrb.com/docs/posts/)
