@@ -85,7 +85,7 @@ Now that you've got your github pages site up and running you may want to setup 
 ### Update live site using Git
 1. Open folder of your repository in Atom
 2. `Packages` --> `Command Pallet` --> `Git Push`
-3. Wait a few seconds for Github Pages to re-build your site
+3. Wait a minute for Github Pages to re-build your site
 4. View `https://<your github username>.github.io/` in your browser to see your changes
 
 ## Further Reading
