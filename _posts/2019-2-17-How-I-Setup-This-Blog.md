@@ -85,10 +85,10 @@ Now that you've got your github pages site up and running you may want to setup 
 ### Update live site using Git
 1. Open folder of your repository in Atom
 2. `Packages` --> `Command Pallet` --> `Git Push`
-3. Wait for Atom to finish pushing your changes
+3. Wait a few seconds for Github Pages to re-build your site
 4. View `https://<your github username>.github.io/` in your browser to see your changes
 
-## Additional Resources
+## Further Reading
 * [Build a GitHub-Hosted Blog with Jekyll Now](https://www.hongkiat.com/blog/jekyll-now)
 * [How to Create a Blog with Jekyll – A Beginner’s Guide](https://www.hongkiat.com/blog/blog-with-jekyll/)
 * [Orginial Article](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/) by Creator of Jekyll Now
