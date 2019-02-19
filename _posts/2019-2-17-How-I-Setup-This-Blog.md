@@ -70,12 +70,12 @@ Now that you've got your github pages site up and running you may want to setup 
 4. View [http://127.0.0.1:4000](http://127.0.0.1:4000) in your browser
 
 ### Commit Files to local Git repository
-1. Open Atom --> `Open folder`
+1. Open Atom &#8594; `Open folder`
     * select the location local of your repository
 2. Edit files
 3. Check out the changes locally
 4. Authorize GitHub for Atom
-5. `Packages` Menu --> `GitHub Package` --> `Toggle Git`
+5. `Packages Menu` &#8594; `GitHub Package` &#8594; `Toggle Git`
 7. For each file
     1. Click `Stage file`
     2. Enter commit message for the edits you made in *step 3*
@@ -83,7 +83,7 @@ Now that you've got your github pages site up and running you may want to setup 
 
 ### Update live site using Git
 1. Open folder of your repository in Atom
-2. `Packages` --> `Command Pallet` --> `Git Push`
+2. `Packages` &#8594; `Command Pallet` &#8594; `Git Push`
 3. Wait a minute for Github Pages to re-build your site
 4. View `https://<your github username>.github.io/` in your browser to see your changes
 
