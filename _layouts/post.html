@@ -9,11 +9,8 @@ layout: default
             Posted: {{ page.date | date: "%B %e, %Y" }}
         </div>
         <div class="date">
-<<<<<<< HEAD
             {% if posted < updated %}
-=======
             {% if {{ page.date | date: "%s" }} < {{ "today" | date: "%s" }} %}
->>>>>>> 2d0b86bd2a569479622bb664fe43bc1177bcb539
                 Last Updated: {{ "today" | date: "%B %e, %Y" }}
             {% endif %}
         </div>
