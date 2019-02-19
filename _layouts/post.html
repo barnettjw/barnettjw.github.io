@@ -10,7 +10,6 @@ layout: default
         </div>
         <div class="date">
             {% if posted < updated %}
-            {% if {{ page.date | date: "%s" }} < {{ "today" | date: "%s" }} %}
                 Last Updated: {{ "today" | date: "%B %e, %Y" }}
             {% endif %}
         </div>
