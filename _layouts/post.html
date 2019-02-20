@@ -2,7 +2,7 @@
 layout: default
 ---
     {% assign posted = page.date | date: "%s" %}
-    {% assign updated = "today" | date: "%B %e, %Y" %}
+    {% assign updated = "today" | date: "%s" %}
     <article class="post">
         <h1>{{ page.title }}</h1>
         <div class="date">
@@ -10,7 +10,7 @@ layout: default
         </div>
         <div class="date">
             {% if posted < updated %}
-                Last Updated: {{ "today" | date: "%B %e, %Y" }}
+                Last Updated: {{ site.time | date: "%B %e, %Y" }}
             {% endif %}
         </div>
         <div class="entry">
