@@ -1,16 +1,16 @@
 ---
 layout: default
 ---
-    {% assign posted = page.date | date: "%s" %}
-    {% assign updated = "today" | date: "%s" %}
+    {% assign posted = page.posted | date: "%x" %}
+    {% assign updated = page.date | date: "%x" %}
     <article class="post">
         <h1>{{ page.title }}</h1>
         <div class="date">
-            Posted: {{ page.date | date: "%B %e, %Y" }}
+            Posted: {{ posted }}
         </div>
         <div class="date">
-            {% if posted < updated %}
-                Last Updated: {{ site.time | date: "%B %e, %Y" }}
+            {% if posted != updated %}
+                Last Updated: {{ updated }}
             {% endif %}
         </div>
         <div class="entry">
