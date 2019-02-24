@@ -31,14 +31,12 @@ Notes on basic **HTML** tags.
     `<a href="mailto:test@example.com">test@example.com</a>`
 - Images: `<img src=path/to/treehouse-logo.jpg alt="Green Hexagon with foot of a tree frog" title="Treehouse Logo">`
 - Caption Images:
-```html
     <figure>
         <img src=path/to/treehouse-logo.jpg alt="Green Hexagon with foot of a tree frog">
         <figcaption>Treehouse Logo</figcation>
     </figure>
-```
 - Unordered Lists (e.g. bullet points):
-```html
+```
 <ul>
     <li>List Item 1</li>
     <li>List Item 2</li>
@@ -46,7 +44,7 @@ Notes on basic **HTML** tags.
 </ul>
 ```
 - Ordered Lists: (e.g. numbered (or lettered) lists)
-```html
+```
 <ol>
     <li>List Item 1</li>
     <li>List Item 2</li>
@@ -56,7 +54,7 @@ Notes on basic **HTML** tags.
 - Line Break: `<br>`
 - Horizontal Rule: `<hr>`
 - Address
-```html
+```
 <address>
     123 Main St<br>
     New York NY 20001
@@ -73,21 +71,19 @@ Notes on basic **HTML** tags.
 
 ## Simple Web Pages
 
-```HTML
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>This is a Web Page</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Title of Page</h1>
-        <h2>Section Heading</h2>
-        <ul>
-            <li>List Item 1</li>
-            <li>List Item 2</li>
-            <li>List Item 3</li>
-        </ul>
-    </body>
-</html>
-```
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>This is a Web Page</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <h1>Title of Page</h1>
+            <h2>Section Heading</h2>
+            <ul>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+            </ul>
+        </body>
+    </html>
