@@ -23,7 +23,7 @@ For basic Markdwon editing, you can use any Markdown editor which has a live pre
 4. Rename your repository to `<github username>.github.io`
     * This naming scheme is required for GitHub to recognize your repository is a user GitHub pages repository, which is a prerequsite for using **jekyll-now**.
 5. Scroll down to Github pages section. You should see:
-    >  Your site is published at `https://<your github username>.github.io/``
+    >  Your site is published at `https://<your github username>.github.io/`
 6. Go to `https://<your github username>.github.io/` to check out your new site
 
 ### Basic configuration
