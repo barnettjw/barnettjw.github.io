@@ -5,11 +5,11 @@ date: '2019-02-23 18:41'
 posted: '2019-02-17'
 ---
 
-Setting up a blog hosted on [GitHub pages](https://pages.github.com/) (like this one) can be done with only a GitHub account. Posts can be written in markdown using [github.com](https://github.com). To create the page you are reading now, I started by creating a basic Github Pages site.
+Setting up a blog hosted on [GitHub pages](https://pages.github.com/){:target="_blank"} (like this one) can be done with only a GitHub account. Posts can be written in markdown using [github.com](https://github.com){:target="_blank"}. To create the page you are reading now, I started by creating a basic Github Pages site.
 
-One of the easiest ways to do that is to **fork** the [barryclark/jekyll-now](https://github.com/barryclark/jekyll-now) repository (repo for short) on Github. Once I forked that repo, I renamed  the repo from `jekyll-now` to `barnettjw.github.io` (the url you used to get here).
+One of the easiest ways to do that is to **fork** the [barryclark/jekyll-now](https://github.com/barryclark/jekyll-now){:target="_blank"} repository (repo for short) on Github. Once I forked that repo, I renamed  the repo from `jekyll-now` to `barnettjw.github.io` (the url you used to get here).
 
-This post is a detailed list of the steps I used to make this blog, it is divided into 2 parts, **Basic Github Pages Setup** and **Setting up a Jekyll Local Development Environment**. All you need is a Github account, if you don't already have a Github account you can create at [github.com](https://github.com/). On Github pages all content is written using Markdown. If you are new to Markdown or just need a refresher, you can check out [this guide on mastering Markdown](https://guides.github.com/features/mastering-markdown/).
+This post is a detailed list of the steps I used to make this blog, it is divided into 2 parts, **Basic Github Pages Setup** and **Setting up a Jekyll Local Development Environment**. All you need is a Github account, if you don't already have a Github account you can create at [github.com](https://github.com/){:target="_blank"}. On Github pages all content is written using Markdown. If you are new to Markdown or just need a refresher, you can check out [this guide on mastering Markdown](https://guides.github.com/features/mastering-markdown/){:target="_blank"}.
 
 For basic markdwon editing, you can use any markdown editor which has a live preview. If you choose to setup a Jekyll local development environment, I recommend using Atom with a few markdown add-ons. Setting up a local development environment is optional, allows you to edit themes and hava draft posts, for that setup you will need a few more tools.
 
@@ -17,8 +17,8 @@ For basic markdwon editing, you can use any markdown editor which has a live pre
 
 ### Creating a user-based github page
 
-1. Sign into your [Github](https://github.com) account
-2. Go to the [barryclark/jekyll-now](https://github.com/barryclark/jekyll-now) repository and click on the **Fork** button .
+1. Sign into your [Github](https://github.com){:target="_blank"} account
+2. Go to the [barryclark/jekyll-now](https://github.com/barryclark/jekyll-now){:target="_blank"} repository and click on the **Fork** button .
 3. In your new repository click *Settings*
 4. Rename your repository to `<github username>.github.io`
     * This naming scheme is required for github to recognize your repository is a user github pages repository, which is a pre-requsite for using **jekyll-now**.
@@ -36,9 +36,9 @@ Now that you've got your github pages site up and running you may want to setup 
 
 ### Install Development Tools
 
-1. Install [Sourcetree](https://www.sourcetreeapp.com/)
+1. Install [Sourcetree](https://www.sourcetreeapp.com/){:target="_blank"}
     - I prefer Sourcetree over Github Desktop because atom has bettwe diagrams and statuses.
-2. Install [Atom](https://atom.io/)
+2. Install [Atom](https://atom.io/){:target="_blank"}
     * Install atom packages
         * **markdown-preview**
         * **markdown-writer**
@@ -48,10 +48,10 @@ Now that you've got your github pages site up and running you may want to setup 
 
 1. Install Ruby
     - On Windows
-        - Install [Choclatey](https://chocolatey.org/)
+        - Install [Choclatey](https://chocolatey.org/){:target="_blank"}
         - `choco install ruby -y`
     * On Mac
-        - Install [Home Brew](https://brew.sh/)
+        - Install [Home Brew](https://brew.sh/){:target="_blank"}
         - `brew install ruby`
         - `gem install rubygems-update`
 
@@ -70,7 +70,7 @@ Now that you've got your github pages site up and running you may want to setup 
 1. Open terminal / powershell
 2. Navigate to location of your repository
 3. `jekyll serve --watch`
-4. View [http://127.0.0.1:4000](http://127.0.0.1:4000) in your browser
+4. View [http://127.0.0.1:4000](http://127.0.0.1:4000){:target="_blank"} in your browser
 
 ### Commit Files to local Git repository
 1. Open Atom &#8594; `Open folder`
