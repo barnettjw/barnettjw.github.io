@@ -31,37 +31,37 @@ Notes on basic **HTML** tags.
     `<a href="mailto:test@example.com">test@example.com</a>`
 - Images: `<img src=path/to/treehouse-logo.jpg alt="Green Hexagon with foot of a tree frog" title="Treehouse Logo">`
 - Caption Images:
-    ```html
-        <figure>
-            <img src=path/to/treehouse-logo.jpg alt="Green Hexagon with foot of a tree frog">
-            <figcaption>Treehouse Logo</figcation>
-        </figure>
-    ```
+```html
+    <figure>
+        <img src=path/to/treehouse-logo.jpg alt="Green Hexagon with foot of a tree frog">
+        <figcaption>Treehouse Logo</figcation>
+    </figure>
+```
 - Unordered Lists (e.g. bullet points):
-    ```html
-    <ul>
-        <li>List Item 1</li>
-        <li>List Item 2</li>
-        <li>List Item 3</li>
-    </ul>
-    ```
+```html
+<ul>
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+</ul>
+```
 - Ordered Lists: (e.g. numbered (or lettered) lists)
-    ```html
-    <ol>
-        <li>List Item 1</li>
-        <li>List Item 2</li>
-        <li>List Item 3</li>
-    </ol>
-    ```
+```html
+<ol>
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+</ol>
+```
 - Line Break: `<br>`
 - Horizontal Rule: `<hr>`
 - Address
-    ```html
-    <address>
-        123 Main St<br>
-        New York NY 20001
-    </address>
-    ```
+```html
+<address>
+    123 Main St<br>
+    New York NY 20001
+</address>
+```
 - Important Text: `<strong>Important Text</strong>`
 - Empahsis Text: `<em>Book Title</em>`
 - Small text: `<small>Legal Disclaimer here</small>`
