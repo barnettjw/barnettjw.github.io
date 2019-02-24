@@ -36,30 +36,36 @@ Notes on basic **HTML** tags.
         <figcaption>Treehouse Logo</figcation>
     </figure>
 - Unordered Lists (e.g. bullet points):
-```
+
+```html
 <ul>
     <li>List Item 1</li>
     <li>List Item 2</li>
     <li>List Item 3</li>
 </ul>
 ```
+
 - Ordered Lists: (e.g. numbered (or lettered) lists)
-```
+
+```html
 <ol>
     <li>List Item 1</li>
     <li>List Item 2</li>
     <li>List Item 3</li>
 </ol>
 ```
+
 - Line Break: `<br>`
 - Horizontal Rule: `<hr>`
 - Address
-```
+
+```html
 <address>
     123 Main St<br>
     New York NY 20001
 </address>
 ```
+
 - Important Text: `<strong>Important Text</strong>`
 - Empahsis Text: `<em>Book Title</em>`
 - Small text: `<small>Legal Disclaimer here</small>`
@@ -71,19 +77,21 @@ Notes on basic **HTML** tags.
 
 ## Simple Web Pages
 
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <title>This is a Web Page</title>
-            <link rel="stylesheet" href="style.css">
-        </head>
-        <body>
-            <h1>Title of Page</h1>
-            <h2>Section Heading</h2>
-            <ul>
-                <li>List Item 1</li>
-                <li>List Item 2</li>
-                <li>List Item 3</li>
-            </ul>
-        </body>
-    </html>
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is a Web Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Title of Page</h1>
+        <h2>Section Heading</h2>
+        <ul>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+        </ul>
+    </body>
+</html>
+```
