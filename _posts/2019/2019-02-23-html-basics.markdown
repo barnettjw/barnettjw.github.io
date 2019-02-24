@@ -11,7 +11,7 @@ category: front-end
 Notes on basic **HTML** tags.
 
 ## Basic Structure of a Web Page
-- `<!DOCTYPE html>`: Tells browser what version of html you are using
+- `<!DOCTYPE html>`: Tells browser what version of HTML you are using
 - `<html>`: Parent or root tag, all other tags are child tags of `<html>`
 - `<head>`: Contains title, links to CSS stylesheets and metadata
 - `<title>`: Title of the page, appears on the browser tab and in search results
@@ -67,7 +67,7 @@ Notes on basic **HTML** tags.
 ```
 
 - Important Text: `<strong>Important Text</strong>`
-- Empahsis Text: `<em>Book Title</em>`
+- Emphasis Text: `<em>Book Title</em>`
 - Small text: `<small>Legal Disclaimer here</small>`
 - Block-level division: `<div>I'm a block of text</div>`
 - Inline division: `<span>Highlight me</span>`
