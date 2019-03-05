@@ -2,7 +2,7 @@
 layout: post
 title: How I Setup This Blog
 date: '2019-02-23 18:41'
-posted: '2019-02-17'
+posted: '2019-2-17'
 ---
 
 Setting up a blog hosted on [GitHub Pages](https://pages.github.com/){:target="_blank"} (like this one) can be done with only a GitHub account. Posts can be written in Markdown using [github.com](https://github.com){:target="_blank"}. To create the page you are reading now, I started by creating a basic Github Pages site.

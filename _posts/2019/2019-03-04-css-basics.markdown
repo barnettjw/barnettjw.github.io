@@ -2,7 +2,7 @@
 layout: post
 title: CSS Basics
 date: '2019-03-04 22:58'
-posted: '2019-03-04'
+posted: '2019-3-4'
 reference: 'https://teamtreehouse.com/library/css-basics'
 tags: CSS
 category: front-end

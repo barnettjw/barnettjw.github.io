@@ -2,7 +2,7 @@
 layout: post
 title: HTML Basics
 date: '2019-02-23 18:31'
-posted: '2019-02-23 18:00'
+posted: '2019-2-23'
 reference: 'https://teamtreehouse.com/library/html-basics-2'
 tags: HTML
 category: front-end
