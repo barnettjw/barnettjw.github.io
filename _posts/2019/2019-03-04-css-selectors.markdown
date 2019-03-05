@@ -8,6 +8,8 @@ tags: CSS
 category: front-end
 ---
 
+Notes on **CSS** selectors.
+
 ## Child Selectors
 - Descendant: `#main p {font-size: 24px; }` Targets all `<p>` elements that are nested inside of the `#main` element.
 - Direct Child: `.sale > span { font-weight: bold; }` Targets any `<span>` element nested directly inside of any element `.sale` applied. Unlike the descendant selector, the span must be directly inside of `.sale`.

@@ -8,6 +8,8 @@ tags: CSS
 category: front-end
 ---
 
+Notes on basic **CSS** usage.
+
 ## Types of styles
 - Default Browser Styles: Default styles from the browser (e.g. Chrome), what make `<h1>` large and `<em>` bold, there are small but noticable variations between browser vendors (e.g. Chrome vs Internet Explorer).
 - Author Styles: The styles you write and include on a page
