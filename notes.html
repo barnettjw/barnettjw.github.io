@@ -1,0 +1,10 @@
+---
+layout: page
+title: Notes
+---
+
+<div class="notes">
+    {% for note in site.notes %}
+      <h1><a href="{{ site.baseurl }}{{ note.url }}"> {{ note.title }} </a></h1>
+    {% endfor %}
+</div>
