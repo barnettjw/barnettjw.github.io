@@ -1,4 +1,5 @@
-
+[class^=bg][class*="notes"] { background-color: #f1f3f5; }
+.note h3::after { background: linear-gradient(to right,rgba(116,95,181,.2),transparent 80%); }
 
 .highlight {
     max-width: 500px;
@@ -6,9 +7,21 @@
     min-height: 250px;
 }
 
-[class^=bg][class*="notes"] { background-color: #eaeaea; }
-.note h3::after { background: linear-gradient(to right,rgba(116,95,181,0.2),transparent 80%); }
-
+.note h1 {
+    font-size: 2.25em;
+    font-weight: 200;
+    text-align: center;
+    text-transform: lowercase;
+ }
+.note * {
+    color: #345;
+    font-family: segoe ui,helvetica neue,sans-serif
+}
+.note h3 {
+    color: #745fb5;
+    font-size: 1.1em;
+    font-weight: normal;
+}
 
 /***************** jekyll-now styles ********************/
 
@@ -20,9 +33,6 @@ pre.highlight {
     box-shadow: 1px 1px rgba(0,0,0,0.1);
     margin: 20px 0 20px 0;
     overflow: auto;
-
 }
 
-code {
-  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
-}
+code { font-family:'Consolas', 'Courier', monospace; }
