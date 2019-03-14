@@ -1,0 +1,27 @@
+
+
+.highlight {
+    max-width: 500px;
+    min-width: 300px;
+    min-height: 250px;
+}
+
+.note h3::after { background: linear-gradient(to right,rgba(116,95,181,0.2),transparent 80%); }
+
+
+/***************** jekyll-now styles ********************/
+
+pre.highlight {
+    padding: 7px 7px 7px 10px;
+    border: 1px solid #ddd;
+    -moz-box-shadow: 1px 1px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 1px 1px rgba(0,0,0,0.1);
+    margin: 20px 0 20px 0;
+    overflow: auto;
+
+}
+
+code {
+  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+}
