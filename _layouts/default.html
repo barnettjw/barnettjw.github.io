@@ -15,7 +15,7 @@
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
-  <body>
+  <body {% assign file = page.url | split: "/" %} class="bg-{{ file }}" >
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">

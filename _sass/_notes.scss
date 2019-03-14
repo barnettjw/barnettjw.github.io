@@ -6,6 +6,7 @@
     min-height: 250px;
 }
 
+[class^=bg][class*="notes"] { background-color: #eaeaea; }
 .note h3::after { background: linear-gradient(to right,rgba(116,95,181,0.2),transparent 80%); }
 
 
