@@ -11,5 +11,5 @@ p { color: red;}
 
 ### More Details
 ```
-p { margin: 50px;}
+p { margin: 50px; }
 ```
