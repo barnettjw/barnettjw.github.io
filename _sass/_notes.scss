@@ -1,7 +1,7 @@
 [class^=bg][class*="notes"] { background-color: #f1f3f5; }
 .note h3::after { background: linear-gradient(to right,rgba(116,95,181,.2),transparent 80%); }
 
-.highlight {
+.note .highlight {
     max-width: 500px;
     min-width: 300px;
     min-height: 250px;
@@ -22,17 +22,3 @@
     font-size: 1.1em;
     font-weight: normal;
 }
-
-/***************** jekyll-now styles ********************/
-
-pre.highlight {
-    padding: 7px 7px 7px 10px;
-    border: 1px solid #ddd;
-    -moz-box-shadow: 1px 1px rgba(0,0,0,0.1);
-    -webkit-box-shadow: 1px 1px rgba(0,0,0,0.1);
-    box-shadow: 1px 1px rgba(0,0,0,0.1);
-    margin: 20px 0 20px 0;
-    overflow: auto;
-}
-
-code { font-family:'Consolas', 'Courier', monospace; }
