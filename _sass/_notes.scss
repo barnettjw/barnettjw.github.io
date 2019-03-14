@@ -1,6 +1,8 @@
 [class^=bg][class*="notes"] { background-color: #f1f3f5; }
 .note h3::after { background: linear-gradient(to right,rgba(116,95,181,.2),transparent 80%); }
 
+.bg-notes .entry { margin-left: 1em; }
+
 .note .highlight {
     max-width: 500px;
     min-width: 300px;
