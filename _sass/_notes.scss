@@ -5,14 +5,14 @@
 .bg-notes .entry { margin-left: 1em; }
 
 /* typography */
-body[class*="notes"] h1 {
+body[class*="notes"] #main h1 {
     font-size: 2.25em;
     font-weight: 200;
     text-align: center;
     text-transform: lowercase;
  }
 
-body[class*="notes"] * {
+body[class*="notes"] #main pre {
     color: #345;
     font-family: segoe ui,helvetica neue,sans-serif
 }
