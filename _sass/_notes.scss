@@ -33,7 +33,6 @@ body[class*="notes"] .container {
 }
 
 [class*="notes"] .entry {
-    border: solid red 3px;
     margin: 0 auto;
     max-width: 1700px;
 }
@@ -55,7 +54,6 @@ body[class*="notes"] .container {
 @media only screen and (max-width: 1660px) { .note{ width: 45%;  } }
 @media only screen and (max-width: 1125px) { .note{ width: 95%;  } }
 @media only screen and (max-width: 640px)  {
-
     #main h1 { margin: 10px; }
     .note{
         margin: 0;
