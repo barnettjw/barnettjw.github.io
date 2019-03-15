@@ -157,6 +157,9 @@ img {
 
 .wrapper-masthead {
     margin-bottom: 50px;
+    @include mobile {
+        margin-bottom: 30px;
+    }
 }
 
 .masthead {
@@ -164,6 +167,7 @@ img {
     border-bottom: 1px solid $lightGray;
 
     @include mobile {
+        padding: 0;
         text-align: center;
     }
 }
@@ -176,7 +180,7 @@ img {
 
     @include mobile {
         float: none;
-        display: block;
+        display: none;
         margin: 0 auto;
     }
 
@@ -194,7 +198,13 @@ img {
         margin: 0 auto;
     }
 }
+.site-name {
+    @include mobile {
+        margin: 0;
+    }
+}
 
+.site-
 .site-name {
     margin: 0;
     color: $darkGray;
