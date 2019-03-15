@@ -23,15 +23,15 @@ body {
     font: 18px/1.4 $helvetica;
     color: $darkGray;
 
+    max-width: 2000px;
     position: relative; /* allow footer to be positioned at bottom of page */
     min-height: 100vh;
 }
 
 .container {
     margin: 0 auto;
-    max-width: 740px;
+    max-width: 1700px;
     padding: 0 10px;
-    width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {

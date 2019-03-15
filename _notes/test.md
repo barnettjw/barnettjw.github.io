@@ -3,13 +3,25 @@ layout: note
 title: Test Note
 date: '2019-03-13'
 ---
+{::options parse_block_html="true" /}
 
-### Basics
+<div class="note">
+### test
 ```
 p { color: red;}
 ```
+</div>
 
-### More Details
+<div class="note">
+### test
 ```
-p { margin: 50px; }
+p { color: red;}
 ```
+</div>
+
+<div class="note">
+### test
+```
+p { color: red;}
+```
+</div>

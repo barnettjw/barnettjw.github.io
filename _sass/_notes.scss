@@ -1,26 +1,64 @@
 [class^=bg][class*="notes"] { background-color: #f1f3f5; }
 .note h3::after { background: linear-gradient(to right,rgba(116,95,181,.2),transparent 80%); }
 
+/*********** notes.html************/
 .bg-notes .entry { margin-left: 1em; }
 
-.note .highlight {
-    max-width: 500px;
-    min-width: 300px;
-    min-height: 250px;
-}
-
-.note h1 {
+/* typography */
+body[class*="notes"] h1 {
     font-size: 2.25em;
     font-weight: 200;
     text-align: center;
     text-transform: lowercase;
  }
-.note * {
+
+body[class*="notes"] * {
     color: #345;
     font-family: segoe ui,helvetica neue,sans-serif
 }
-.note h3 {
+
+body[class*="notes"] h3 {
     color: #745fb5;
     font-size: 1.1em;
     font-weight: normal;
+}
+
+/**** single note pages ****/
+
+/* box model */
+body[class*="notes"] .container {
+    margin: 0 auto;
+    max-width: 1700px;
+    min-width: 400px;
+}
+
+[class*="notes"] .entry {
+    border: solid red 3px;
+    margin: 0 auto;
+    max-width: 1700px;
+}
+
+.note pre.highlight {
+    height: 100%;
+    min-height: 250px;
+}
+
+.note {
+    float: left;
+    margin: 20px;
+    max-width: 800px;
+}
+
+/* media queries */
+
+@media only screen and (min-width: 1665px) { .note{  width: 30%; } }
+@media only screen and (max-width: 1660px) { .note{ width: 45%;  } }
+@media only screen and (max-width: 1125px) { .note{ width: 95%;  } }
+@media only screen and (max-width: 640px)  {
+
+    #main h1 { margin: 10px; }
+    .note{
+        margin: 0;
+        width: 100%;
+    }
 }
