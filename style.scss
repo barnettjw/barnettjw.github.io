@@ -199,6 +199,7 @@ img {
     }
 }
 .site-name {
+    margin-top: -25px;
     @include mobile {
         margin: 0;
     }
