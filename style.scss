@@ -22,15 +22,13 @@ body {
     background: $white;
     font: 18px/1.4 $helvetica;
     color: $darkGray;
-
-    max-width: 2000px;
     position: relative; /* allow footer to be positioned at bottom of page */
     min-height: 100vh;
 }
 
 .container {
     margin: 0 auto;
-    max-width: 1700px;
+    max-width: 1400px;
     padding: 0 10px;
 }
 
