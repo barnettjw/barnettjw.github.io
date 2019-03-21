@@ -1,21 +1,25 @@
 ---
 layout: default
 ---
-    {% assign posted = page.posted | date: "%x" %}
-    {% assign updated = page.date | date: "%x" %}
-    <article class="post">
-        <h1>{{ page.title }}</h1>
-        <div class="date">
-            Posted: {{ posted }}
-        </div>
-        <div class="date">
-            {% if posted != updated %}
-                Last Updated: {{ updated }}
-            {% endif %}
-        </div>
-        <div class="entry">
-            {{ content }}
-        </div>
+    <div id="main" role="main" class="container">
+        {% assign posted = page.posted | date: "%x" %}
+        {% assign updated = page.date | date: "%x" %}
+        <article class="post">
+            <h1>{{ page.title }}</h1>
+            <div class="date">
+                Posted: {{ posted }}
+            </div>
+            <div class="date">
+                {% if posted != updated %}
+                    Last Updated: {{ updated }}
+                {% endif %}
+            </div>
+            <div class="entry">
+                {{ content }}
+            </div>
 
-        {% include disqus.html %}
-    </article>
+            {% include disqus.html %}
+        </article>
+    </div>
+    {%comment%} {% include footer.html %} {%endcomment%}
+    {%comment%} {% include highlight.html %} {%endcomment%}

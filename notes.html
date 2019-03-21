@@ -1,11 +1,19 @@
 ---
-layout: page
+layout: default
 title: Notes
 ---
-<input placeholder="Filter Command ...">
-
-<ul>
-    {% for note in site.notes %}
-        <li class="item" data-type="{{note.tags}}"><a href="{{ site.baseurl }}{{ note.url }}"> {{ note.title }} </a></li>
-    {% endfor %}
-</ul>
+    <div id="main" role="main" class="container">
+        <article>
+          <h1>{{ page.title }}</h1>
+          <div class="entry">
+              <input placeholder="Filter Command ..." autofocus>
+              <ul>
+                  {% for note in site.notes %}
+                      <li class="item" data-type="{{note.tags}}"><a href="{{ site.baseurl }}{{ note.url }}"> {{ note.title }} </a></li>
+                  {% endfor %}
+              </ul>
+          </div>
+        </article>
+    </div>
+    {%comment%}{% include footer.html %}{%endcomment%}
+    {%comment%}{% include jsearch.html %}{%endcomment%}

@@ -1,0 +1,25 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+<script>
+    <!-- https://www.jqueryscript.net/other/Minimal-jQuery-Live-Search-Plugin-With-Fade-Effect-jSearch.html -->
+    function jFilter(input, items){
+        switch(true){
+            case input === '':
+                items.css('opacity', '1');
+                break;
+            default:
+                items.css('opacity', '0.1');
+                items.filter('[data-type*="' + input.toLowerCase() + '"]').css('opacity', '1');
+                break;
+        }
+    }
+
+    var jSearch = (function (){
+        // Item List
+        var input = $('input');
+        var items = $('.item');
+
+        // filter on focus and keyup
+        input.focus(function() { jFilter($(this).val(), items) });
+        input.keyup(function() { jFilter($(this).val(), items) });
+    }());
+</script>
