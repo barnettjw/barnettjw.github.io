@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
     <div id="main" role="main" class="container">
         {% assign posted = page.posted | date: "%x" %}
         {% assign updated = page.date | date: "%x" %}
@@ -21,5 +22,5 @@ layout: default
             {% include disqus.html %}
         </article>
     </div>
-    {%comment%} {% include footer.html %} {%endcomment%}
-    {%comment%} {% include highlight.html %} {%endcomment%}
+    {% include footer.html %}
+    {% include highlight.html %}
