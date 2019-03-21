@@ -55,6 +55,30 @@
                 hljs.highlightBlock(block);
             });
         });
-</script>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script>
+        <!-- https://www.jqueryscript.net/other/Minimal-jQuery-Live-Search-Plugin-With-Fade-Effect-jSearch.html -->
+        var jSearch = (function (){
+            // Item List
+            var input = $('input');
+            var items = $('.item');
+
+            // Search Listener
+            input.keyup(function() {
+                var input = $(this).val();
+
+                switch(true){
+                    case input === '':
+                        items.css('opacity', '1');
+                        break;
+                    default:
+                        items.css('opacity', '0.1');
+                        items.filter('[data-type*="' + input.toLowerCase() + '"]').css('opacity', '1');
+                        break;
+                }
+            });
+        }());
+    </script>
   </body>
 </html>
