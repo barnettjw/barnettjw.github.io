@@ -1,13 +1,12 @@
 .hljs { display: inline-block;}
 
 code.hljs {
-  padding: .1em .3em;
-  margin-bottom: -0.5em;
+    padding: .1em .3em;
+    margin-bottom: -0.5em;
+    font-family: Consolas, Menlo, Monaco, 'Bitstream Vera Sans Mono', 'Courier', monospace;
 }
 
-pre > code.hljs {
-  padding: .5em;
-}
+pre > code.hljs { padding: .5em; }
 
 /*
 
