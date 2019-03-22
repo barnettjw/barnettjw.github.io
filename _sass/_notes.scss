@@ -1,40 +1,117 @@
 [class^=bg][class*="notes"] { background-color: #f1f3f5; }
-.note h3::after { background: linear-gradient(to right,rgba(116,95,181,.2),transparent 80%); }
 
 /*********** notes.html************/
-.bg-notes .entry { margin-left: 1em; }
+.bg-notes .entry {
+    max-width: 900px;
+    margin-left: 1em;
+}
 
-/* typography */
-body[class*="notes"] #main h1 {
+/*** typography ***/
+
+/*body[class*="notes"] #main h1 {
     font-size: 2.25em;
     font-weight: 200;
     text-align: center;
     text-transform: lowercase;
- }
+}*/
 
-body[class*="notes"] #main pre {
+[class*="notes"] h1 {
+    text-align: center;
     color: #345;
-    font-family: segoe ui,helvetica neue,sans-serif
+    font-weight: 200;
+    font-family: "segoe ui","helvetica neue",sans-serif;
 }
 
-body[class*="notes"] h3 {
-    color: #745fb5;
+
+/*** search field ***/
+.bg-notes input {
+    width: 400px;
+    height: 2.5em;
+    margin-left: 2em;
+
+    background: #fcfcfc;
+    border: 1px solid #aaa;
+    border-radius: 5px;
     font-size: 1.1em;
-    font-weight: normal;
+    text-indent: .75em;
+    box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+
+    @include mobile {
+        width: 320px;
+        font-size: 1em;
+        height: 2em;
+    }
 }
 
-/**** single note pages ****/
+/*** tag list ***/
+.hide-item { opacity: 0.2; }
+.show-item { opacity: 1; }
+.bg-notes ul { text-align:  justify;}
 
-/* box model */
-body[class*="notes"] .container {
+.bg-notes li {
+    display: inline-block;
+    margin: .4em;
+    border: 2px solid #ccc;
+    padding: 0 .4em;
+    font-size: 1.25em;
+    list-style: none;
+    border-radius: .2em;
+
+    @include mobile { margin: .5em 0; }
+}
+
+.bg-notes li:hover{
+    border-width: 1px;
+    transform: scale(1.1);
+    box-shadow: 0 0 3px #ccc, 0 5px 10px #ddd inset;
+}
+
+
+/*********** single note pages ***********/
+
+[class*="notes"] .container {
     margin: 0 auto;
-    max-width: 1700px;
     min-width: 400px;
 }
 
 [class*="notes"] .entry {
     margin: 0 auto;
-    max-width: 1700px;
+    max-width: 1000px;
+}
+
+/*** tables ***/
+[class*="notes"] table { margin: 0 auto; }
+[class*="notes"] thead {
+    border-bottom: 3px solid #ccc;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+[class*="notes"] .hljs { background: none;}
+[class*="notes"] th:first-of-type { border-right: 3px solid #ccc; }
+[class*="notes"] th {
+    padding: .5em;
+    text-align: center !important;
+    color: #745fb5;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+[class*="notes"] tr:nth-child(even) { background: rgba(0, 0, 0, 0.03); }
+[class*="notes"] td {
+    padding: .5em;
+    vertical-align: top;
+}
+
+[class*="notes"] td:last-of-type { white-space: nowrap;}
+[class*="notes"] td:first-of-type { border-right: 3px solid #ccc; }
+[class*="notes"] tr:nth-child(odd):last-of-type td { padding-bottom: 0; }
+
+
+/*********** note boxes ***********/
+/*
+body[class*="notes"] #main pre {
+    color: #345;
+    font-family: "segoe ui","helvetica neue",sans-serif;
 }
 
 .note pre.highlight {
@@ -48,7 +125,7 @@ body[class*="notes"] .container {
     max-width: 800px;
 }
 
-/* media queries */
+/* media queries
 
 @media only screen and (min-width: 1665px) { .note{  width: 30%; } }
 @media only screen and (max-width: 1660px) { .note{ width: 45%;  } }
@@ -60,3 +137,4 @@ body[class*="notes"] .container {
         width: 100%;
     }
 }
+*/
