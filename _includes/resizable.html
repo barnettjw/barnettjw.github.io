@@ -1,0 +1,15 @@
+<script >
+    $("td:first-of-type, th:first-of-type")
+    .css({ position: "relative" })
+    .prepend("<div class='resizer'></div>")
+    .resizable({
+        resizeHeight: false,
+        onDragStart: function(e, $el, opt) {
+          if (!$(e.target).hasClass("resizer"))
+            return false;
+          return true;
+        }
+    });
+
+    $("#main td").css('white-space','normal')
+</script>

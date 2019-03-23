@@ -67,13 +67,25 @@
 
 /*********** single note pages ***********/
 
-[class*="notes"] .container { margin: 0 auto; }
+[class*="notes"] #main { margin: 0 auto; }
+
+@media screen and (min-width: 670px){
+    [class*="notes"] #main { max-width: 90vw; }
+}
+@media screen and (min-width: 1500px) {
+    [class*="notes"] #main { max-width: 80vw; }
+}
+@media screen and (min-width: 1800px) {
+    [class*="notes"] #main { max-width: 75vw; }
+}
+@media screen and (min-width: 2000px) {
+    [class*="notes"] #main { max-width: 1500px; }
+}
 
 /*********** note table ***********/
 [class*="notes"] table {
     margin: 0 auto;
     overflow: hidden;
-    max-width: 80vw;
     @include mobile { width: 90%}
 }
 [class*="notes"] thead {
@@ -102,7 +114,7 @@
 }
 [class*="notes"] tr:nth-child(odd):last-of-type td { padding-bottom: 0; }
 
-/*[class*="notes"] td:last-of-type { white-space: nowrap;}*/
+[class*="notes"] td:last-of-type { white-space: nowrap;}
 [class*="notes"] td:first-of-type { border-right: 3px solid #ccc; }
 [class*="notes"] td {
     padding: .5em;
@@ -120,7 +132,7 @@
 }
 
 /*** resizable table using jquery resizable ***/
-/*
+
 .resizer {
     position: absolute;
     top: 0;
@@ -142,4 +154,3 @@
   width: 12px;
   z-index: -1;
 }
-*/
