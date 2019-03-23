@@ -17,7 +17,7 @@
     (function($) {
     	function mediaSize() {
     		if (window.matchMedia('(max-width: 650px)').matches) {
-                $("table td").each(function() {
+                $("td, th").each(function() {
                   $(this).parent().prepend(this);
                 });
     		}
