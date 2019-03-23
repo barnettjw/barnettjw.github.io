@@ -67,18 +67,15 @@
 
 /*********** single note pages ***********/
 
-[class*="notes"] .container {
-    margin: 0 auto;
-    min-width: 400px;
-}
+[class*="notes"] .container { margin: 0 auto; }
 
-[class*="notes"] .entry {
+/*********** note table ***********/
+[class*="notes"] table {
     margin: 0 auto;
-    max-width: 1000px;
+    overflow: hidden;
+    max-width: 80vw;
+    @include mobile { width: 90%}
 }
-
-/*** tables ***/
-[class*="notes"] table { margin: 0 auto; }
 [class*="notes"] thead {
     border-bottom: 3px solid #ccc;
     background: rgba(0, 0, 0, 0.03);
@@ -92,47 +89,57 @@
     color: #745fb5;
     font-weight: bold;
     font-size: 1.1em;
+    @include mobile {
+        display: inline;
+        &:first-of-type::after { content: " / "; }
+        padding: 0;
+    }
 }
 
-[class*="notes"] tr:nth-child(even) { background: rgba(0, 0, 0, 0.03); }
+[class*="notes"] tr:nth-child(even) {
+    background: rgba(0, 0, 0, 0.03);
+    @include mobile {background: inherit; }
+}
+[class*="notes"] tr:nth-child(odd):last-of-type td { padding-bottom: 0; }
+
+/*[class*="notes"] td:last-of-type { white-space: nowrap;}*/
+[class*="notes"] td:first-of-type { border-right: 3px solid #ccc; }
 [class*="notes"] td {
     padding: .5em;
     vertical-align: top;
-}
-
-[class*="notes"] td:last-of-type { white-space: nowrap;}
-[class*="notes"] td:first-of-type { border-right: 3px solid #ccc; }
-[class*="notes"] tr:nth-child(odd):last-of-type td { padding-bottom: 0; }
-
-
-/*********** note boxes ***********/
-/*
-body[class*="notes"] #main pre {
-    color: #345;
-    font-family: "segoe ui","helvetica neue",sans-serif;
-}
-
-.note pre.highlight {
-    height: 100%;
-    min-height: 250px;
-}
-
-.note {
-    float: left;
-    margin: 20px;
-    max-width: 800px;
-}
-
-/* media queries
-
-@media only screen and (min-width: 1665px) { .note{  width: 30%; } }
-@media only screen and (max-width: 1660px) { .note{ width: 45%;  } }
-@media only screen and (max-width: 1125px) { .note{ width: 95%;  } }
-@media only screen and (max-width: 640px)  {
-    #main h1 { margin: 10px; }
-    .note{
-        margin: 0;
-        width: 100%;
+    @include mobile {
+        display: block;
+        &:nth-child(even) { background: rgba(0, 0, 0, 0.03); }
     }
+}
+
+[class*="notes"] .entry td,
+[class*="notes"] .entry th,
+[class*="notes"] .entry thead {
+    @include mobile { border: none; }
+}
+
+/*** resizable table using jquery resizable ***/
+/*
+.resizer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    width: 8px;
+    @include mobile { display: none; }
+    cursor: e-resize;
+}
+
+.resizer:hover::after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.05);
+  left: 3px;
+  top: -500px;
+  height: 100px;
+  width: 12px;
+  z-index: -1;
 }
 */
