@@ -93,6 +93,7 @@
 [class*="notes"] thead {
     border-bottom: 3px solid #ccc;
     background: rgba(0, 0, 0, 0.03);
+    @include mobile {background: inherit; }
 }
 
 [class*="notes"] .hljs { background: none;}
