@@ -88,3 +88,9 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+atom:
+  buildCommand:
+    - C:\Ruby24-x64\bin\jekyll.bat
+    - build
+    - --incremental
