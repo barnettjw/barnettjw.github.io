@@ -86,7 +86,9 @@
 [class*="notes"] table {
     margin: 0 auto;
     overflow: hidden;
-    @include mobile { width: 90%}
+    @include mobile {
+        width: 90%;
+    }
 }
 [class*="notes"] thead {
     border-bottom: 3px solid #ccc;

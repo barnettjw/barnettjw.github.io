@@ -10,6 +10,20 @@
           return true;
         }
     });
-
     $("#main td").css('white-space','normal')
+</script>
+
+<script>
+    (function($) {
+    	function mediaSize() {
+    		if (window.matchMedia('(max-width: 650px)').matches) {
+                $("table td").each(function() {
+                  $(this).parent().prepend(this);
+                });
+    		}
+    	};
+
+      mediaSize();
+      window.addEventListener('resize', mediaSize, false);
+    })(jQuery);
 </script>
