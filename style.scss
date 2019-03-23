@@ -289,6 +289,7 @@ nav {
     }
 }
 
+/*
 .wrapper-footer {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
@@ -297,12 +298,13 @@ nav {
     position: absolute;
     bottom: 0;
     width: 100%;
+    @include mobile { display: none; }
 }
 
 footer {
     padding: 1em 0;
     text-align: center;
-}
+}*/
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
