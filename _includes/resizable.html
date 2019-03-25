@@ -1,8 +1,10 @@
+<!--
 <script >
     $("td:first-of-type, th:first-of-type")
     .css({ position: "relative" })
     .prepend("<div class='resizer'></div>")
     .resizable({
+        option: "disabled",
         resizeHeight: false,
         onDragStart: function(e, $el, opt) {
           if (!$(e.target).hasClass("resizer"))
@@ -11,8 +13,12 @@
         }
     });
     $("#main td").css('white-space','normal')
-</script>
 
+    $("td:first-of-type, th:first-of-type").resizable( "disable" );
+</script>
+-->
+
+<!--
 <script>
     (function($) {
     	function mediaSize() {
@@ -27,3 +33,20 @@
       window.addEventListener('resize', mediaSize, false);
     })(jQuery);
 </script>
+-->
+
+<!--
+    function calcUsedWidth(){
+        var tableWidth = $('table').css('width');
+        var maxPageWidth = $('#main').css('max-width');
+        var usedWidth = parseInt(tableWidth) / parseInt(maxPageWidth);
+        console.log(tableWidth + " " + usedWidth);
+
+        if(usedWidth > .7){
+            $("td:first-of-type, th:first-of-type").resizable( "enable" );
+        }
+        else {
+            $("td:first-of-type, th:first-of-type").resizable( "disable" );
+        }
+    }
+-->
