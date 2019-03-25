@@ -3,7 +3,7 @@ layout: note
 title: rpm switches
 date: '2019-03-17'
 category: linux-command
-tag: rpm switches
+tag: [rpm, switches]
 ---
 | Switch                 | Description                                             |
 |:-----------------------|:--------------------------------------------------------|

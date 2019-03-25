@@ -3,7 +3,7 @@ layout: note
 title: rpm
 date: '2019-03-17'
 category: linux-command
-tag: rpm grep
+tag: [rpm, grep]
 ---
 | Command                        | Description                                                    |
 |:-------------------------------|:---------------------------------------------------------------|
