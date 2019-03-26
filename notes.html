@@ -7,9 +7,16 @@ title: Notes
           <h1>{{ page.title }}</h1>
           <div class="entry">
               <input placeholder="Filter Command ..." autofocus>
+
               <ul>
-                  {% for note in site.notes %}
-                      <li class="item" data-type="{{note.tags}}"><a href="{{ site.baseurl }}{{ note.url }}"> {{ note.title }} </a></li>
+                  {% assign tags =  site.notes | map: 'tags' | join: ','  | split: ',' | uniq %}
+                  {% for tag in tags %}
+                      <li class="item" data-type="{{tag}}">
+                          {% assign tagSize = site.notes | where: "tag", {{tag}} | size %}
+                          <a href="{{ site.baseurl }}/tags/{{ tag }}">
+                              {{ tag }}<sub>{{tagSize}}</sub>
+                          </a>
+                      </li>
                   {% endfor %}
               </ul>
           </div>
