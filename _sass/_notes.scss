@@ -1,4 +1,4 @@
-[class^=bg][class*="notes"] { background-color: #f1f3f5; }
+[class*="notes"], [class*="tags"] { background-color: #f1f3f5; }
 
 /*********** notes.html************/
 .bg-notes .entry {
@@ -15,13 +15,23 @@
     text-transform: lowercase;
 }*/
 
-[class*="notes"] h1 {
+[class*="notes"] h1, [class*="tags"] h1 {
     text-align: center;
     color: #345;
     font-weight: 200;
     font-family: "segoe ui","helvetica neue",sans-serif;
 }
 
+.bg-notes sub {
+    display: inline-block;
+    padding: 0 .35em;
+    margin: 0 0 .2em .7em;
+    background: #e3e3e3;
+    border-radius: 50%;
+    border: 1px #aaa solid;
+    vertical-align: middle;
+    font-size: .5em;
+}
 
 /*** search field ***/
 .bg-notes input {
@@ -45,8 +55,9 @@
 
 /*** tag list ***/
 .bg-notes ul { text-align:  justify;}
+[class*="tags"] ul { text-align:  center;}
 
-.bg-notes li {
+.bg-notes li, [class*="tags"] li {
     display: inline-block;
     margin: .4em;
     border: 2px solid #ccc;
@@ -58,7 +69,7 @@
     @include mobile { margin: .5em 0; }
 }
 
-.bg-notes li:hover{
+.bg-notes li:hover, [class*="tags"] li:hover{
     border-width: 1px;
     transform: scale(1.1);
     box-shadow: 0 0 3px #ccc, 0 5px 10px #ddd inset;
@@ -135,8 +146,7 @@
 }
 
 /*** resizable table using jquery resizable ***/
-
-.resizer {
+/*.resizer {
     position: absolute;
     top: 0;
     right: 0;
@@ -156,4 +166,4 @@
   height: 100px;
   width: 12px;
   z-index: -1;
-}
+}*/

@@ -1,0 +1,9 @@
+---
+layout: page
+---
+<ul>
+        {% assign notes = site.notes | where: "tag", {{page.tag}} %}
+        {% for note in notes %}
+             <li><a href="{{ site.baseurl }}{{ note.url }}"> {{ note.title }} </a></li>
+        {% endfor %}
+</ul>
