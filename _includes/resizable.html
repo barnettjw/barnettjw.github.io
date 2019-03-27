@@ -18,11 +18,11 @@
 </script>
 -->
 
-<!--
+//on mobile, resort table right-to-left so description comes before command
 <script>
     (function($) {
     	function mediaSize() {
-    		if (window.matchMedia('(max-width: 650px)').matches) {
+    		if (window.matchMedia('(max-width: 640px)').matches) {
                 $("td, th").each(function() {
                   $(this).parent().prepend(this);
                 });
@@ -33,7 +33,6 @@
       window.addEventListener('resize', mediaSize, false);
     })(jQuery);
 </script>
--->
 
 <!--
     function calcUsedWidth(){
