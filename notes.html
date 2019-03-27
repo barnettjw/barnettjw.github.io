@@ -6,12 +6,12 @@ title: Notes
         <article>
           <h1>{{ page.title }}</h1>
           <div class="entry">
-              <input placeholder="Filter Command ..." autofocus>
+              <input placeholder="search ..." autofocus>
 
               <ul>
                   {% assign tags =  site.notes | map: 'tags' | join: ','  | split: ',' | uniq %}
                   {% for tag in tags %}
-                      <li class="item" data-type="{{tag}}">
+                      <li class="item" data-tag="{{tag}}">
                           {% assign tagSize = site.notes | where: "tag", {{tag}} | size %}
                           <a href="{{ site.baseurl }}/tags/{{ tag }}">
                               {{ tag }}<sub>{{tagSize}}</sub>

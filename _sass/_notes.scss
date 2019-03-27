@@ -22,17 +22,6 @@
     font-family: "segoe ui","helvetica neue",sans-serif;
 }
 
-.bg-notes sub {
-    display: inline-block;
-    padding: 0 .35em;
-    margin: 0 0 .2em .7em;
-    background: #e3e3e3;
-    border-radius: 50%;
-    border: 1px #aaa solid;
-    vertical-align: middle;
-    font-size: .5em;
-}
-
 /*** search field ***/
 .bg-notes input {
     width: 400px;
@@ -69,10 +58,28 @@
     @include mobile { margin: .5em 0; }
 }
 
+.bg-notes sub {
+    display: inline-block;
+    padding: 0 .35em;
+    margin: 0 0 .2em .7em;
+    background: #e3e3e3;
+    border-radius: 50%;
+    border: 1px #aaa solid;
+    vertical-align: middle;
+    font-size: .5em;
+}
+
 .bg-notes li:hover, [class*="tags"] li:hover{
     border-width: 1px;
     transform: scale(1.1);
     box-shadow: 0 0 3px #ccc, 0 5px 10px #ddd inset;
+}
+
+.bg-notes a:focus, .bg-notes a:focus {
+    color: #745fb5;
+    font-weight: bold;
+    opacity: 1;
+    outline: none;
 }
 
 
