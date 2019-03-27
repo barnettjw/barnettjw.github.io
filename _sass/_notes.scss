@@ -75,20 +75,25 @@
     font-size: .5em;
 }
 
-.bg-notes li:hover, [class*="tags"] li:hover{
+.bg-notes li:hover,
+[class*="tags"] li:hover {
     border-width: 1px;
     transform: scale(1.1);
     box-shadow: 0 0 3px #ccc, 0 5px 10px #ddd inset;
 }
 
-.bg-notes a:focus, .bg-notes a:focus {
-    color: #745fb5;
-    font-weight: bold;
+.bg-notes a:focus,
+[class*="tags"] a:focus {
+    text-decoration: underline;
     opacity: 1;
     outline: none;
 }
 
-
+.bg-notes a:active,
+[class*="tags"] a:active {
+    position: relative;
+    top: .1em;
+}
 
 /*********** single note pages ***********/
 
