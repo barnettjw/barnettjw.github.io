@@ -40,10 +40,15 @@
         font-size: 1em;
         height: 2em;
     }
+
+    @include xs-mobile { width: 250px; }
 }
 
 /*** tag list ***/
-.bg-notes ul { text-align:  justify;}
+.bg-notes ul {
+    text-align:  justify;
+    @include xs-mobile { text-align: left; }
+}
 [class*="tags"] ul { text-align:  center;}
 
 .bg-notes li, [class*="tags"] li {
@@ -56,6 +61,7 @@
     border-radius: .2em;
 
     @include mobile { margin: .5em 0; }
+    @include xs-mobile { margin: .5em .25em; }
 }
 
 .bg-notes sub {
