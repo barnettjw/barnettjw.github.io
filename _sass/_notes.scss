@@ -45,15 +45,16 @@
 }
 
 /*** tag list ***/
+
 .bg-notes ul {
     text-align:  justify;
     @include xs-mobile { text-align: left; }
 }
-[class*="tags"] ul { text-align:  center;}
 
+[class*="tags"] ul { text-align:  center;}
 .bg-notes li, [class*="tags"] li {
     display: inline-block;
-    margin: .4em;
+    margin: .4em .07em;
     border: 2px solid #ccc;
     padding: 0 .4em;
     font-size: 1.25em;
