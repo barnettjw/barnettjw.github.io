@@ -9,7 +9,7 @@ title: Notes
               <input placeholder="search ..." autofocus>
 
               <ul>
-                  {% assign tags =  site.notes | map: 'tags' | join: ','  | split: ',' | uniq %}
+                  {% assign tags =  site.notes | map: 'tags' | join: ','  | split: ',' | uniq | sort_natural %}
                   {% for tag in tags %}
                       <li class="item" data-tag="{{tag}}">
                           {% assign tagSize = site.notes | where: "tag", {{tag}} | size %}
