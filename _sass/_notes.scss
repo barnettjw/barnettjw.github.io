@@ -113,13 +113,17 @@
 }
 
 /*********** note table ***********/
+.nowrap {white-space: nowrap; }
+.absolute { position: absolute; }
 [class*="notes"] table {
     margin: 0 auto;
     overflow: hidden;
+    left: 3em;
     @include mobile {
         width: 90%;
     }
 }
+
 [class*="notes"] thead {
     border-bottom: 3px solid #ccc;
     background: rgba(0, 0, 0, 0.03);
@@ -138,6 +142,10 @@
         display: inline;
         &:first-of-type::after { content: " / "; }
         padding: 0;
+    }
+    &::selection{
+        color: inherit;
+        background: inherit;
     }
 }
 
