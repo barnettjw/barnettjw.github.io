@@ -176,26 +176,3 @@
 [class*="notes"] .entry thead {
     @include mobile { border: none; }
 }
-
-/*** resizable table using jquery resizable ***/
-/*.resizer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: auto;
-    width: 8px;
-    @include mobile { display: none; }
-    cursor: e-resize;
-}
-
-.resizer:hover::after {
-  content: "";
-  position: absolute;
-  background: rgba(0, 0, 0, 0.05);
-  left: 3px;
-  top: -500px;
-  height: 100px;
-  width: 12px;
-  z-index: -1;
-}*/
