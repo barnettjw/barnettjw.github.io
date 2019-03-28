@@ -11,3 +11,6 @@ package.json
 config.cson
 todo.md
 _drafts
+_notes/*.md
+!_notes/*rpm*.md
+!_notes/*test*.md
