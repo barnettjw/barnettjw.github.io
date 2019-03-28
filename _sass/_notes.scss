@@ -5,7 +5,8 @@
 
 .bg-notes .entry {
     max-width: 900px;
-    margin-left: 1em;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /*** typography ***/
@@ -20,13 +21,14 @@
 /*** search field ***/
 
 .bg-notes input {
-    width: 400px;
+    width: 20em;
     height: 2.5em;
-    margin-left: 2em;
 
     background: #fcfcfc;
     border: 1px solid #aaa;
     border-radius: 5px;
+    margin-left: 2em;
+
     font-size: 1.1em;
     text-indent: .75em;
     box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
@@ -43,19 +45,21 @@
 /*** tag list ***/
 
 .bg-notes ul {
-    text-align:  justify;
+    text-align:  center;
     @include xs-mobile { text-align: left; }
 }
 
 [class*="tags"] ul { text-align:  center;}
 .bg-notes li, [class*="tags"] li {
     display: inline-block;
+
     margin: .4em .07em;
     border: 2px solid #ccc;
+    border-radius: .2em;
     padding: 0 .4em;
     font-size: 1.25em;
     list-style: none;
-    border-radius: .2em;
+    text-align: justify;
 
     @include mobile { margin: .5em 0; }
     @include xs-mobile { margin: .5em .25em; }
