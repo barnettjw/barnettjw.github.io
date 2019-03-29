@@ -99,6 +99,29 @@
     top: .1em;
 }
 
+/*** tool tip ***/
+//source: https://codepen.io/kaioe/pen/gRxbre
+.bg-notes sub[data-descr] {
+    cursor: help;
+    position: relative;
+}
+.bg-notes sub[data-descr]:hover::after {
+    content: attr(data-descr);
+    position: absolute;
+    z-index: 1;
+    left: 1em;
+    top: 1em;
+
+    min-width: 13em;
+    padding: .25em .5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+
+    font-size: 1.25em;
+    text-align: left;
+}
+
 /*********** single note pages ***********/
 
 [class*="notes"] #main { margin: 0 auto; }
