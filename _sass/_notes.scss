@@ -101,14 +101,13 @@
 
 /*** tool tip ***/
 //source: https://codepen.io/kaioe/pen/gRxbre
-.bg-notes sub[data-descr] {
+[data-descr] {
     cursor: help;
     position: relative;
 }
-.bg-notes sub[data-descr]:hover::after {
+[data-descr]:hover::after {
     content: attr(data-descr);
     position: absolute;
-    z-index: 1;
     left: 1em;
     top: 1em;
 
@@ -118,9 +117,9 @@
     border-radius: 5px;
     background-color: #f5f5f5;
 
-    font-size: 1.25em;
     text-align: left;
 }
+sub::after { font-size: 1.25em; }
 
 /*********** single note pages ***********/
 
@@ -216,3 +215,14 @@
 
 [class^=icon] { cursor: default; }
 [class^=icon]:hover { cursor: pointer; }
+
+[class^=icon][data-descr]:hover::after {
+    color: #4183C4;
+    min-width: 5em;
+    -webkit-text-stroke: 0;
+    font-size: 1em;
+}
+
+/* on notes.html only show selected faves */
+.bg-notes [class^=icon] { display: none; }
+.bg-notes [class^=icon].selected { display: inline-block; }
