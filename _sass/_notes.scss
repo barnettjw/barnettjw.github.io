@@ -226,3 +226,7 @@ sub::after { font-size: 1.25em; }
 /* on notes.html only show selected faves */
 .bg-notes [class^=icon] { display: none; }
 .bg-notes [class^=icon].selected { display: inline-block; }
+
+@media(hover: none) {
+    [class^=icon] { display: none; }
+}

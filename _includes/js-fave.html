@@ -13,15 +13,6 @@
         }
         else { var favorites = []; }
 
-
-        /*const canHover = !(matchMedia('(hover: none)').matches);
-        const canPoint = !(matchMedia('(pointer: coarse)').matches);
-        if(canHover || canPoint) {
-
-
-        }*/
-
-        // toggle item in array, also css class
         $( ".icon-heart" ).click(function() {
             $( this ).toggleClass( "selected" );
             var selected = $(this).parent().attr("data-id");
