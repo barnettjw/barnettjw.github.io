@@ -2,11 +2,7 @@ _site
 .DS_Store
 .jekyll
 .jekyll-metadata
-.bundle
 .sass-cache
-Gemfile
-Gemfile.lock
-node_modules
 package.json
 config.cson
 todo.md
@@ -14,3 +10,7 @@ _drafts
 _notes/*.md
 !_notes/*rpm*.md
 !_notes/*test*.md
+tags/*.html
+!tags/tag-rpm.html
+!tags/tag-grep.html
+!tags/tag-switches.html
