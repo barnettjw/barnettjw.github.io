@@ -7,12 +7,9 @@
             jQuery.each( $( ".icon-heart" ), function( i, val ) {
 
                 var currentItem = $(val).parent().attr("data-id");
-                console.log(currentItem);
                 var index = jQuery.inArray(currentItem, favorites );
                 if ( index >= 0 ) { $(val).toggleClass( "selected" ); }
             });
-
-
         }
         else { var favorites = []; }
 
@@ -20,6 +17,7 @@
         const canHover = !(matchMedia('(hover: none)').matches);
         const canPoint = !(matchMedia('(pointer: coarse)').matches);
         if(canHover || canPoint) {
+
             $( ".icon-heart" ).click(function() {
                 $( this ).toggleClass( "selected" );
                 var selected = $(this).parent().attr("data-id");
