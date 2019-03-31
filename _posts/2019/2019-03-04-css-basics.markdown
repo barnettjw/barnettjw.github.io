@@ -96,7 +96,7 @@ Notes on basic **CSS** usage.
     - *block*: Element takes up entire line and forces a new line before and after. Examples include: `p`, `h1`, `div`
     - *inline*: Element only takes up as much space as their is content, they also do not have width or height Examples include: `a`, `span`
 - The model model is made up of content, padding, borders and margins.
-![CSS Box Model Diagram](images/2019/02/css-box-model-diagram.png) [source](https://hackernoon.com/css-box-model-45ecf4ac219e){:target="_blank"}.
+<!--![CSS Box Model Diagram](images/2019/02/css-box-model-diagram.png) [source](https://hackernoon.com/css-box-model-45ecf4ac219e){:target="_blank"}.-->
 
 - *padding*
 - `div { padding-top: 20px; }` other variations: `padding-bottom`, `padding-right`, `padding-left`
