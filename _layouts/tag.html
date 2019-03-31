@@ -1,9 +1,22 @@
 ---
-layout: page
+layout: default
 ---
-<ul>
-        {% assign notes = site.notes | where: "tag", {{page.tag}} %}
-        {% for note in notes %}
-             <li><a href="{{ site.baseurl }}{{ note.url }}"> {{ note.title }} </a></li>
-        {% endfor %}
-</ul>
+<div id="main" role="main" class="container">
+    <article>
+        <h1 data-id="{{ page.title }}">
+            {{ page.title }}
+            <span data-descr="add to favorites" class="icon-heart">&#10084;</span>
+        </h1>
+        <ul>
+            {% assign notes = site.notes | where: "tag", {{page.tag}} %}
+            {% for note in notes %}
+                 <li data-id="{{note.id}}">
+                     <span data-descr="add to favorites" class="icon-heart">&#10084;</span>
+                     <a href="{{ site.baseurl }}{{ note.url }}"> {{ note.title }} </a>
+                 </li>
+            {% endfor %}
+        </ul>
+    </article>
+</div>
+{% include jquery.html %}
+{% include js-fave.html %}
