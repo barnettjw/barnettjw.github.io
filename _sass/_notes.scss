@@ -227,6 +227,6 @@ sub::after { font-size: 1.25em; }
 .bg-notes [class^=icon] { display: none; }
 .bg-notes [class^=icon].selected { display: inline-block; }
 
-@media(hover: none) {
-    [class^=icon] { display: none; }
+@include mobile {
+    [class^=icon] { display: none !important; }
 }
