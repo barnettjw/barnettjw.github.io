@@ -11,8 +11,9 @@ title: Notes
               <ul>
                   {% assign tags =  site.notes | map: 'tags' | join: ','  | split: ',' | uniq | sort_natural %}
                   {% for tag in tags %}
-                      <li class="item" data-tag="{{tag}}">
+                      <li class="item" data-tag="{{tag}}" data-id="{{tag}}">
                           {% assign tagSize = site.notes | where: "tag", {{tag}} | size %}
+                          <span data-descr="favorites" class="icon-heart">&#10084;</span>
                           <a href="{{ site.baseurl }}/tags/{{ tag }}">
                                 {{ tag }}
                                 {% if tagSize > 1 %}
