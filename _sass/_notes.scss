@@ -139,7 +139,7 @@
     [class*="notes"] #main { max-width: 1500px; }
 }
 
-/*********** note table ***********/
+/*** note table ***/
 
 .nowrap {white-space: nowrap; }
 .absolute { position: absolute; }
@@ -199,3 +199,20 @@
 [class*="notes"] .entry thead {
     @include mobile { border: none; }
 }
+
+/*** favorites ***/
+[class^=icon] {
+    display: inline-block;
+    font-size: .75em;
+    color: white;
+    font-family: dingbats;
+    -webkit-text-stroke: 1.5px #ddd;
+}
+
+[class^=icon].selected {
+    color: lightpink;
+    -webkit-text-stroke: 0;
+}
+
+[class^=icon] { cursor: default; }
+[class^=icon]:hover { cursor: pointer; }
