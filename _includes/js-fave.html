@@ -13,21 +13,24 @@
         }
         else { var favorites = []; }
 
-        // toggle item in array, also css class
-        const canHover = !(matchMedia('(hover: none)').matches);
+
+        /*const canHover = !(matchMedia('(hover: none)').matches);
         const canPoint = !(matchMedia('(pointer: coarse)').matches);
         if(canHover || canPoint) {
 
-            $( ".icon-heart" ).click(function() {
-                $( this ).toggleClass( "selected" );
-                var selected = $(this).parent().attr("data-id");
 
-                var index = jQuery.inArray( selected, favorites );
-                if ( index >= 0 ) { favorites.splice(index, 1); }
-                else { favorites.push(selected); }
-                localStorage.setItem("favorites", JSON.stringify(favorites));
-            });
-        }
+        }*/
+
+        // toggle item in array, also css class
+        $( ".icon-heart" ).click(function() {
+            $( this ).toggleClass( "selected" );
+            var selected = $(this).parent().attr("data-id");
+
+            var index = jQuery.inArray( selected, favorites );
+            if ( index >= 0 ) { favorites.splice(index, 1); }
+            else { favorites.push(selected); }
+            localStorage.setItem("favorites", JSON.stringify(favorites));
+        });
 
         console.log(favorites);
     });
