@@ -2,31 +2,31 @@
 layout: default
 title: Notes
 ---
-    <div id="main" role="main" class="container">
-        <article>
-          <h1>{{ page.title }}</h1>
-          <div class="entry">
-              <input placeholder="search ..." autofocus>
 
-              <ul>
-                  {% assign tags =  site.notes | map: 'tags' | join: ','  | split: ',' | uniq | sort_natural %}
-                  {% for tag in tags %}
-                      <li class="item" data-tag="{{tag}}" data-id="{{tag}}">
-                          {% assign tagSize = site.notes | where: "tag", {{tag}} | size %}
-                          <span data-descr="favorites" class="icon-heart">&#10084;</span>
-                          <a href="{{ site.baseurl }}/tags/{{ tag }}">
-                                {{ tag }}
-                                {% if tagSize > 1 %}
-                                    <sub data-descr="notes using this command">{{tagSize}}</sub>
-                                {% endif %}
-                          </a>
-                      </li>
-                  {% endfor %}
-              </ul>
-          </div>
-        </article>
-    </div>
-    {% comment %}{% include footer.html %}{% endcomment %}
-    {% include jquery.html %}
-    {% include jsearch.html %}
-    {% include js-fave.html %}
+<div id="main" role="main" class="container">
+    <article>
+      <h1>{{ page.title }}</h1>
+      <div class="entry">
+          <input placeholder="search ..." autofocus>
+
+          <ul>
+              {% assign tags =  site.notes | map: 'tags' | join: ','  | split: ',' | uniq | sort_natural %}
+              {% for tag in tags %}
+                  <li class="item" data-tag="{{tag}}" data-id="{{tag}}">
+                      {% assign tagSize = site.notes | where: "tag", {{tag}} | size %}
+                      <span data-descr="favorites" class="icon-heart">&#10084;</span>
+                      <a href="{{ site.baseurl }}/tags/{{ tag }}">
+                            {{ tag }}
+                            {% if tagSize > 1 %}
+                                <sub data-descr="notes using this command">{{tagSize}}</sub>
+                            {% endif %}
+                      </a>
+                  </li>
+              {% endfor %}
+          </ul>
+      </div>
+    </article>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+<script src="js/jsearch.js"></script>
+<script src="js/favorite.js"></script>

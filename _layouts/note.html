@@ -1,24 +1,25 @@
 ---
 layout: default
 ---
-    <div id="main" role="main" class="container">
-        {% assign updated = page.date | date: "%x" %}
-        <article>
-            <!--<div class="date">
-                Last Updated: {{ updated }}
-            </div>-->
-            <h1 data-id="{{page.id}}">
-                {{ page.title }}
-                <span data-descr="favorites" class="icon-heart">&#10084;</span>
-            </h1>
+<div id="main" role="main" class="container">
+    {% assign updated = page.date | date: "%x" %}
+    <article>
+        <!--<div class="date">
+            Last Updated: {{ updated }}
+        </div>-->
+        <h1 data-id="{{page.id}}">
+            {{ page.title }}
+            <span data-descr="favorites" class="icon-heart">&#10084;</span>
+        </h1>
 
-            <div class="entry clearfix">
-                {{ content }}
-            </div>
-        </article>
-    </div>
-    {% comment %}{% include footer.html %}{% endcomment %}
-    {% include highlight.html %}
-    {% include jquery.html %}
-    {% include js-table.html %}
-    {% include js-fave.html %}
+        <div class="entry clearfix">
+            {{ content }}
+        </div>
+    </article>
+</div>
+
+<script src="../js/highlight.pack.js"></script>
+<script src="../js/highlight.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+<script src="../js/favorite.js"></script>
+<script src="../js/fancy-table.js"></script>
